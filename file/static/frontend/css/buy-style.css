@@ -1,0 +1,105 @@
+main .container{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+    padding-left: 15px;
+    background-color: #fff;
+    border: 1px solid #cecece;
+}
+
+.row{
+    margin: 7px 0;
+}
+
+.game-name{
+    background-color: #cecece;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 4px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #212121;
+}
+
+.catalog-link {
+    color: #afafaf;
+    font-size: 13px;
+}
+
+.catalog-link:hover{
+    color: #000;
+}
+
+
+
+.info-card div{
+    margin-bottom: 18px;
+    background-color: #00b147;
+    border-radius: 15px;
+    padding: 4px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 8px 13px 29px -10px rgba(0,0,0,0.75);
+}
+
+.info-card div:hover{
+    background-color: #0a7a37;
+    
+
+}
+
+.info-card__info{
+    color: #fff;
+}
+
+
+.price-inner{
+    padding: 10px;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #cecece;
+    position: relative;
+    
+}
+
+.buy-inner{
+    margin-top: 50px;
+}
+
+.discont-lnner{
+    position: absolute;
+    background-color: #00b147;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 13px;
+    top: -4%;
+    left: -4%;
+
+  
+}
+
+.btn-buy{
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.row-description{
+    margin-top: 50px;
+}
+
+.description{
+    padding: 20px;
+    background-color: #cecece;
+    border-radius: 15px;
+}
+
+.screen-inner{
+    margin: 10px 0;
+}

@@ -1,0 +1,103 @@
+{% load static %}
+
+
+
+<header class="header">
+	<div class="container">
+		<div class="header__inner d-flex justify-content-around">
+			<div class="header__logo">
+				<div class="logo">
+					<a href="{% url 'home' %}">
+						<img src="{% static 'frontend/icon/logo.png' %}" width="130" height="auto" alt="">
+					</a>
+				</div>
+			</div>
+			<nav class="header__nav">
+				<ul class="top-menu d-flex ">
+					<li class="top-menu__item">
+						<a href="#" class="top-menu__link">Отзывы
+						</a>
+					</li>
+					<li class="top-menu__item">
+						<a href="#" class="top-menu__link">Гарантии
+						</a>
+					</li>
+					<li class="top-menu__item">
+						<a href="#" class="top-menu__link">Накопительная
+						</a>
+					</li>
+					<li class="top-menu__item">
+						<a href="#" class="top-menu__link">Как купить
+						</a>
+					</li>
+					<li class="top-menu__item">
+						<a href="#" class="top-menu__link">Заработай
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__user">
+				<div class="user-menu d-flex">
+					<li class="user-menu__item">
+						<a href="" class="user-menu__link user-menu__link-support">			
+							ПОДДЕРЖКА
+						</a>
+					</li>
+					<li class="user-menu__item">
+						<a href="" class="user-menu__link user-menu__link-buy">
+							МОИ ПОКУПКИ
+						</a>
+					</li>
+				</div>
+			</div>
+		</div>
+	</div>	
+</header>
+
+<div class="bar">
+	<div class="container">
+		<div class="bar__inner d-flex justify-content-around">
+			<nav class="bar__nav">
+			
+				<div class="menu d-flex">
+
+					<li class="menu__item">
+						<a href="" class="menu__link">
+							Каталог
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">
+							Скидки
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">
+							Бесплатно
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">
+							Region Free
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="menu__link">
+							Испытай удачу
+						</a>
+					</li>
+				</div>
+			
+			</nav>
+			<div class="bar__search">
+				<div class="search">
+					<div class="search-form">
+						<input type="text" class="search__control" value="" placeholder="ПОИСК ПО МАГАЗИНУ">
+						<inpute class="search__btn" type="submit" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+

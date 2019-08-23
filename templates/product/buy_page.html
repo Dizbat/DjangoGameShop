@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "frontend/css/buy-style.css" %}">
+{% endblock style %}
+
+
+{% block content %}
+<main class="main">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-auto">
+                <a href="#" class="catalog-link">каталог</a>        
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-auto">
+                <span class="game-name">Купить ключ от игры {{game.name}}</span>
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-auto">    
+                <img src="{{main_image.image.url}}" alt="" width="370" height="auto">                      
+            </div>
+            <div class="col-5">
+                <div class="info-card">
+                    <div class="info-card__genre"><span class="info-card__name">Жанр:  </span><span class="info-card__info">Экшен</span></div>
+                    <div class="info-card__language"><span class="info-card__name">Язык:  </span><span class="info-card__info">Русский</span></div>
+                    <div class="info-card__platform"><span class="info-card__name">Платформа:  </span><span class="info-card__info">PC</span></div>
+                    <div class="info-card__date"><span class="info-card__name">Дата выхода:  </span><span class="info-card__info">22.04.2018</span></div>
+                    <div class="info-card__publisher"><span class="info-card__name">Издатель:  </span><span class="info-card__info">Electronic Arts</span></div>
+                    <div class="info-card__activation"><span class="info-card__name">Активация:  </span><span class="info-card__info">Steam</span></div>   
+                </div>             
+
+                <div class="buy-inner">
+                     <button class="btn-block btn-danger btn-buy">Купить</button>
+                </div>
+               
+            </div>
+
+            <div class="col">
+                <div class="price-inner">            
+                    <span>
+                        {{game.price}}р
+                    </span>
+               
+
+                   <div class="discont-lnner">                
+                        <span>-{{game.discont}}%</span>                                                     
+                   </div>
+
+                   
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center row-description">
+            <div class="col-8">
+                <div class="description">
+                    <span>{{game.description}}</span>
+                </div>
+            </div>    
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-10">
+
+                {% for item in screen %}
+                    <div class="screen-inner">
+                        <img src="{{ item.image.url }}" alt="#" class="screen" width="900" height='auto'>
+                    </div>
+                {% endfor %}
+
+            
+            </div>
+        </div>
+
+
+    </div>
+</main>
+{% endblock content %}
